@@ -7,7 +7,7 @@ module.exports = function (client) {
     if (msg.mentions.members.size === 0) return;
     if (msg.author.id === client.user.id) return;
 
-    if (/<(@|@&|#)\d+>/.test(msg.content)) {
+    if (/<(@|@&|#)\d+>/g.test(msg.content)) {
       // Tell them off:
       await msg.channel.send(`Hey ${msg.author}! Please don't tag directly.`);
     }
