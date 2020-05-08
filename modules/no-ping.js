@@ -7,6 +7,7 @@ module.exports = function (client) {
     if (msg.mentions.members.size === 0) return;
     if (msg.author.id === client.user.id) return;
 
+    if (/<(@|@&|#)\d+>/g.test(msg.content)) {
 //     const senderIsStaff = msg.member.roles.some(role => data.staff_roles.indexOf(role.name) !== -1);
 //     if (senderIsStaff) {
 //       return;
