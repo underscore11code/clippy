@@ -16,6 +16,22 @@
     "sendMessageAfterEmbed": true
   },
   {
+    "name": "fbi",
+    "aliases": [
+      "pirate", "piracy"
+    ],
+    "title": "PIRACY = BAD",
+    "description": "Piracy is actually bad! Running an offline mode server supports people who illegally obtain the game.",
+    "fields": [
+      {
+        "key": "Don't be a pirate",
+        "value": "seriously"
+      }
+    ],
+    "message": "https://admincraft.host/fbi",
+    "sendMessageAfterEmbed": true
+  },
+  {
     "name": "colours",
     "aliases": [
       "colors"
@@ -126,24 +142,6 @@
       {
         "key": "What plugins can I use to format chat?",
         "value": "https://github.com/lucko/LuckPerms/wiki/Prefixes,-Suffixes-&-Meta#displaying-prefixes-and-suffixes"
-      }
-    ]
-  },
-  {
-    "name": "ssl",
-    "aliases": [
-      "usessl"
-    ],
-    "title": "The useSSL error!",
-    "description": "The useSSL error appears when you have not added the correct lines in the right place in the configuration. Make sure you do not uncomment the ones already there, but rather add them underneath the `characterEncoding` line.",
-    "fields": [
-      {
-        "key": "Read me!",
-        "value": "https://github.com/lucko/LuckPerms/wiki/Storage-system-errors#mysql-ssl-errors"
-      },
-      {
-        "key": "What is SSL?",
-        "value": "https://www.cloudflare.com/learning/ssl/what-is-ssl/"
       }
     ]
   },
