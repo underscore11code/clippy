@@ -7,9 +7,19 @@ module.exports = function (client) {
     if (msg.mentions.members.size === 0) return;
     if (msg.author.id === client.user.id) return;
 
-    if (/<(@|@&|#)\d+>/.test(msg.content)) {
+//     const senderIsStaff = msg.member.roles.some(role => data.staff_roles.indexOf(role.name) !== -1);
+//     if (senderIsStaff) {
+//       return;
+//     }
+
+    const mentionsStaff = msg.mentions.members.some(member => {
+      // If the message mentions any members that satisfy the following:
+      return member.roles.some(role => data.staff_roles.indexOf(role.name) !== -1);
+    });
+
+    if (mentionsStaff) {
       // Tell them off:
-      await msg.channel.send(`Hey ${msg.author}! Please don't tag directly.`);
+      await msg.channel.send(`Hey ${msg.author}! Please don't tag people directly.`);
     }
   });
 };
