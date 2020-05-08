@@ -89,5 +89,8 @@ module.exports = function (client) {
     }
 
     await message.channel.send({ embed });
+    if (item.sendMessageAfterEmbed) {
+      await message.channel.send(item.message);
+    }
   });
 };
