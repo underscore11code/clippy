@@ -5,6 +5,7 @@ module.exports = function (client) {
     // Ignore DMs and messages that don't mention anyone
     if (msg.channel.type !== 'text') return;
     if (msg.mentions.members.size === 0) return;
+    if (msg.author.id === client.user.id) return;
 
 //     const senderIsStaff = msg.member.roles.some(role => data.staff_roles.indexOf(role.name) !== -1);
 //     if (senderIsStaff) {
