@@ -78,7 +78,7 @@
     ],
     "title": "Please take a screenshot!",
     "description": "Seeing a screenshot makes everything so much easier!",
-  {
+  },
     "name": "pasteit",
     "aliases": [
       "paste", "pastebin"
