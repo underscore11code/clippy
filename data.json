@@ -1,7 +1,8 @@
 {
   "staff_roles": [
     "staff",
-    "helpful"
+    "helpful",
+    "member"
   ],
   "member_role": "420316139986485250"
 }
