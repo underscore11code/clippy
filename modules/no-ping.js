@@ -9,7 +9,7 @@ module.exports = function (client) {
 
     if (/<(@|@&|#)\d+>/.test(msg.content)) {
       // Tell them off:
-      await msg.channel.send(`Hey ${msg.author}! Please don't tagdirectly.`);
+      await msg.channel.send(`Hey ${msg.author}! Please don't tag directly.`);
     }
   });
 };
