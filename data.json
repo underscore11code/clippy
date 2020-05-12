@@ -3,5 +3,11 @@
     "staff",
     "helpful"
   ],
-  "member_role": "420316139986485250"
+  "member_role": "420316139986485250",
+  "reactionroles": [{
+    "id": "",
+    "description": "",
+    "emoji": ""
+  }],
+  "reactionroleschannel": ""
 }
