@@ -1,19 +1,19 @@
 const data = require('../data.json');
 const RichEmbed = require('discord.js').RichEmbed;
 module.exports = client => {
-    let reactionCallback = async (reaction, user) => {
+    client.on('messageReactionAdd', async (reaction, user) => {
         if (user.equals(user.client.user)) return;
+        if (reaction.message.channel.id !== data.reactionroleschannel) return;
         let rr = data.reactionroles.find(rr => rr.emoji === reaction.emoji.name);
         if (rr === undefined) return reaction.remove(user);
         if (!reaction.message.guild) return;
         let member = reaction.message.guild.members.get(user.id);
-        let message = '';
         if (member.roles.find(role => role.id === rr.id))
             await member.removeRole(rr.id);
         else
             await member.addRole(rr.id);
         reaction.remove(user);
-    }
+    });
 
     client.on('ready', async () => {
         let channel = client.channels.get(data.reactionroleschannel);
@@ -27,7 +27,6 @@ module.exports = client => {
         })
         let message = await channel.send(embed);
         data.reactionroles.forEach(rr => message.react(rr.emoji));
-        client.on('messageReactionAdd', reactionCallback)
     })
 
     client.on('message', async message => {
