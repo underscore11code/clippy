@@ -5,6 +5,10 @@
     "thonk"
   ],
   "member_role": "708227903212748890",
-  "nsfw_role": "708265881440092241",
-  "nsfw_message": "708266204950822912"
+  "reactionroles": [{
+    "id": "",
+    "description": "",
+    "emoji": ""
+  }],
+  "reactionroleschannel": ""
 }
