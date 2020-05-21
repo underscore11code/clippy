@@ -12,8 +12,8 @@ module.exports = {
     tests: [
         {
             checks: [
-                /Caused by: java\.util\.concurrent\.CompletionException: java\.sql\.SQLTransientConnectionException: luckperms - Connection is not available, request timed out after \d+ms\./,
-                /Caused by: java\.sql\.SQLTransientConnectionException: luckperms - Connection is not available, request timed out after \d+ms\./,
+                /java\.util\.concurrent\.CompletionException: java\.sql\.SQLTransientConnectionException: luckperms(?:-hikari)? - Connection is not available, request timed out after \d+ms\./,
+                /java\.sql\.SQLTransientConnectionException: luckperms(?:-hikari)? - Connection is not available, request timed out after \d+ms\./,
                 /luckperms - Failed to validate connection com\.mysql\.jdbc\.JDBC4Connection@\w+ \(Communications link failure\)/,
                 /The last packet successfully received from the server was \d+ milliseconds ago\. The last packet sent successfully to the server was \d+ milliseconds ago\./
             ],
