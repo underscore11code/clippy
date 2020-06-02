@@ -26,7 +26,7 @@ module.exports = client => {
             embed.addField(`${rr.emoji} ${channel.guild.roles.get(rr.id).name}`, rr.description, true);
         })
         let message = await channel.send(embed);
-        data.reactionroles.forEach(rr => message.react(rr.emoji));
+        data.reactionroles.forEach(async rr => await message.react(rr.emoji));
     })
 
     client.on('message', async message => {
