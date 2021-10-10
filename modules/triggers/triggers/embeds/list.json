@@ -124,7 +124,7 @@
     ],
     "title": "Weight",
     "url": "https://luckperms.net/wiki/Weight",
-    "description": "LuckPerms allows you to set weights in order to determine the priority of certain nodes, like permissions and even prefixes. A higher weight number is a higher priority.",
+    "description": "LuckPerms allows you to set weights in order to determine the priority of certain nodes, like permisfsions and even prefixes. A higher weight number is a higher priority.",
     "wiki": true
   },
   {
@@ -475,7 +475,7 @@
     "fields": [
       {
         "key": "Issue Tracker:",
-        "value": "https://github.com/lucko/LuckPerms/issues/"
+        "value": "https://github.com/LuckPerms/LuckPerms/issues/"
       }
     ]
   },
