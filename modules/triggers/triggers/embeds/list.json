@@ -805,8 +805,8 @@
   {
     "name": "hytalechat",
     "aliases": ["hychat"],
-    "title": "Inbuilt Chat Formatter for Hytale",
-    "description": "The experimental version of LuckPerms for Hytale currently includes a simple chat formatter. This formatter is only intended for simple chat formatting needs. For more advanced chat formatting, we recommend using a dedicated chat plugin that integrates with LuckPerms.\n\nThe chat format may be customized in the LuckPerms `config.yml`. MiniMessage is used for formatting.",
+    "title": "Built-in Chat Formatter for Hytale",
+    "description": "LuckPerms for Hytale includes a simple chat formatter. This formatter is only intended for simple chat formatting needs. For more advanced chat formatting, we recommend using a dedicated chat plugin that integrates with LuckPerms.\n\nThe chat format may be customized in the LuckPerms `config.yml`. MiniMessage is used for formatting.",
     "url": "https://luckperms.net/wiki/Hytale#chat-formatting",
     "fields": [
       {
